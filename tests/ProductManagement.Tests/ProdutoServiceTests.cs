@@ -84,7 +84,7 @@ namespace ProductManagement.Tests
         {
             var produto = new Produto { Id = 1, Descricao = "Produto 1" };
 
-            _mockProdutoRepository.Setup(repo => repo.GetByCodigoAsync(1)).ReturnsAsync(produto);
+            _mockProdutoRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(produto);
 
             var result = await _produtoService.GetByIdAsync(1);
 
@@ -136,7 +136,7 @@ namespace ProductManagement.Tests
         {
             var produto = new Produto { Id = 1, Descricao = "Produto 1", Situacao = "Ativo" };
 
-            _mockProdutoRepository.Setup(repo => repo.GetByCodigoAsync(1)).ReturnsAsync(produto);
+            _mockProdutoRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(produto);
 
             await _produtoService.DeleteAsync(1);
 
