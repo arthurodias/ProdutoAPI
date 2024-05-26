@@ -34,7 +34,6 @@ A API permite:
 ## Pré-requisitos
 
 - .NET 8 SDK
-- Docker (para rodar um banco de dados SQL Server em contêiner, se necessário)
 
 ## Configuração do Projeto
 
